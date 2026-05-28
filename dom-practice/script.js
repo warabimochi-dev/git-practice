@@ -7,6 +7,15 @@ let count = 0;
 
 const updateCount = (newCount) => {
     count = newCount;
+    title.classList.remove("zero","positive","negative");
+    
+    if (count === 0 ) {
+        title.classList.add("zero");
+    } else if (count > 0){
+        title.classList.add("positive");
+    } else if (count < 0){
+        title.classList.add("negative");
+    }
     title.textContent = count;
 }
 
