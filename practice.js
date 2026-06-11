@@ -5,7 +5,7 @@ const names = ["わらび", "もち", "きなこ", "さくら",]
 
 const sum = () => {
     let sumNumbers = 0;
-   numbers.forEach ((num) => {
+    numbers.forEach ((num) => {
     sumNumbers += num;
    }); 
     console.log(sumNumbers);
